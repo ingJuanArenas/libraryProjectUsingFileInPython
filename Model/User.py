@@ -1,6 +1,3 @@
-from os import name
-
-
 class User:
     def __init__(self,name, role, id, psw) -> None:
         self.name =name
@@ -13,11 +10,11 @@ class User:
 
     @classmethod
     def fromString(cls, data:str):
-        name, role, id, psw, borrowedBooks, limitBooks, borrowedBooksQuantity = data.strip().split(",")
+        name, role, id, psw, borrowedBooksQuantity, limitBooks,borrowedBooks= data.strip().split(",")
         user= cls(name,role,id,psw)
-        user.setBorrowedBooks(borrowedBooks)
         user.setBorrowedBooksQuantity(int(borrowedBooksQuantity))
         user.setLimitBooks(int(limitBooks))
+        user.setBorrowedBooks(borrowedBooks.split("|") if borrowedBooks else [])
         return user
 ### getters and setters  all atributes
     def getName(self):
@@ -47,7 +44,7 @@ class User:
     def getBorrowedBooks(self):
         return self.borrowedBooks
 
-    def setBorrowedBooks(self, borrowedBooks):
+    def setBorrowedBooks(self, borrowedBooks:list):
         self.borrowedBooks = borrowedBooks
 
     def getLimitBooks(self):
