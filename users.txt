@@ -1,0 +1,7 @@
+admin,Admin,admin123,1001,0,10,
+librarian,Admin,biblio2025,1002,1,10,Orgullo y prejuicio
+sofia,User,sofia123,2001,2,4,Rayuela|Rebelión en la granja
+carlos,User,carlitos22,2002,0,4,
+lucia,User,lulu321,2003,1,4,El resplandor
+mateo,User,mat3o!,2004,3,4,It|Cien años de soledad|Matar a un ruiseñor
+ana,User,anaXD,2005,0,4,
