@@ -1,10 +1,10 @@
-978-0140449136,La Odisea,Homero,Epopeya,Prestado
-978-8437604947,Don Quijote de la Mancha,Miguel de Cervantes,Novela,Prestado
+978-0140449136,La Odisea,Homero,Epopeya,Disponible
+978-8437604947,Don Quijote de la Mancha,Miguel de Cervantes,Novela,Disponible
 978-0307474278,1984,George Orwell,Ciencia Ficción,Prestado
 978-8491050294,Cien años de soledad,Gabriel García Márquez,Realismo mágico,Disponible
 978-0061120084,Matar a un ruiseñor,Harper Lee,Drama,Disponible
 978-0141439600,Orgullo y prejuicio,Jane Austen,Romance,Disponible
-978-0307743657,El resplandor,Stephen King,Terror,Disponible
-978-9875668300,Rayuela,Julio Cortázar,Novela,Prestado
+978-0307743657,El resplandor,Stephen King,Terror,Prestado
+978-9875668300,Rayuela,Julio Cortázar,Novela,Disponible
 978-0451524935,Rebelión en la granja,George Orwell,Satira,Disponible
 978-1501173219,It,Stephen King,Terror,Prestado
