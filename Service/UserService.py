@@ -49,7 +49,7 @@ class UserService:
     def saveUsersToFile(self):
         try:
             with open(USERS_FILE,"w", encoding=ENCONDING) as f:
-                 for user in self.__users:
+                for user in self.__users:
                     userData= f"{user.getName()},{user.getRole()},{user.getId()},{user.getPsw()},{user.getBorrowedBooksQuantity()},{user.getLimitBooks()},{'|'.join(map(str, user.borrowedBooks))}\n"
                     f.write(userData)
             print("Usuarios guardados exitosamente")
@@ -59,14 +59,14 @@ class UserService:
     def saveUserAfterRegister(self, user:User):
         try:
             with open(USERS_FILE, "a", encoding=ENCONDING) as f:
-                 userData= f"{user.getName()},{user.getRole()},{user.getId()},{user.getPsw()},{user.getBorrowedBooksQuantity()},{user.getLimitBooks()},""\n"
-                 f.write(userData)
+                userData= f"{user.getName()},{user.getRole()},{user.getId()},{user.getPsw()},{user.getBorrowedBooksQuantity()},{user.getLimitBooks()},""\n"
+                f.write(userData)
         except Exception as e:
             print("ERROR: "  + str(e))
 
     def updateUser(self, user: User):
-            for i, existing_user in enumerate(self.__users):
-                if existing_user.getId() == user.getId():
-                    self.__users[i] = user
-                    return
-            raise NotFoundError(f"Usuario con ID {user.getId()} no encontrado")
+        for i, existing_user in enumerate(self.__users):
+            if existing_user.getId() == user.getId():
+                self.__users[i] = user
+                return
+        raise NotFoundError(f"Usuario con ID {user.getId()} no encontrado")

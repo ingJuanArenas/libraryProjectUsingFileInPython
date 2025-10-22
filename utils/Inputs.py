@@ -12,14 +12,14 @@ class Inputs:
         return input("Ingrese el titulo del libro:")
 
     def getBookToAddInfoInput(self):
-       isbn= self.getIsbnInput()
-       title= self.getTitleInput()
-       author= input("Ingrese el autor del libro: ")
-       genre= input("Ingrese el genero del libro: ")
+        isbn= self.getIsbnInput()
+        title= self.getTitleInput()
+        author= input("Ingrese el autor del libro: ")
+        genre= input("Ingrese el genero del libro: ")
 
-       bookToAdd = Book(isbn,title,author,genre)
+        bookToAdd = Book(isbn,title,author,genre)
 
-       return bookToAdd
+        return bookToAdd
     
     def getUserIdInput(self):
         return input("Ingrese el id: ")

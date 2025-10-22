@@ -1,4 +1,3 @@
-from token import ENCODING
 from utils.Exceptions import NotFoundError
 from Model.Book import Book
 
@@ -58,9 +57,9 @@ class BookService:
     def saveBooks(self):
         try:
             with open(BOOK_FILE, "w", encoding="utf-8") as f:
-              for book in self.books:
-                f.write(
-                 f"{book.getIsbn()},{book.getTitle()},{book.getAuthor()},{book.getGenre()},{book.getStatus()}\n")
+                for book in self.books:
+                  f.write(
+                  f"{book.getIsbn()},{book.getTitle()},{book.getAuthor()},{book.getGenre()},{book.getStatus()}\n")
         except Exception as e:
             print("Ha ocurrido un error al guardar: " + str(e))
     def saveBookAfterAdd(self, book:Book):
